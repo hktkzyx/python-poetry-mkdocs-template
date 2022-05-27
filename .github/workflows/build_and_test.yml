@@ -34,8 +34,8 @@ jobs:
           poetry install --no-dev -E test
       - name: Build with poetry
         run: poetry build
-      - name: Test with pytest
-        run: |
-          poetry run pytest --cov --cov-report=xml
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v2
+      # - name: Test with pytest
+      #   run: |
+      #     poetry run pytest --cov --cov-report=xml
+      # - name: Upload coverage to Codecov
+      #   uses: codecov/codecov-action@v2
